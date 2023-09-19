@@ -300,7 +300,8 @@
 
   <form action="/server-page-handling-form-data" method="post">
 
-  <label>Personal Information:</label><br>
+    <fieldset>
+  <legend>Personal Information:</legend>
 
 <label for="fullname">Name:</label>
 <input type="text" id="fullname" name="fullname">
@@ -338,9 +339,10 @@
   <option value="22">RIVERSIDE SOUTH-FINDLAY CREEK</option>
   <option value="23">KANATA SOUTH</option>
   <option value="24">BARRHAVEN EAST</option>
-</select> <br>
-
-  <label>Feedback:</label><br>
+</select> 
+</fieldset>
+<fieldset>
+  <legend>Feedback:</legend>
 
   <label for="Subject/Topic">Subject/Topic:</label>
   <input type="text" id="Subject/Topic" name="Subject/Topic">
@@ -363,8 +365,9 @@
   
 <label for="Location">Location (if applicable):</label>
 <input type="text" id="Location" name="Location"><br>
-
-<label>Follow-up Information:</label><br>
+</fieldset>
+<fieldset>
+<legend>Follow-up Information:</legend>
 <input type="checkbox" id="Follow-up" name="Follow-up"> <label for="Follow-up">I would like to receive a follow-up response.</label>
 <Label for="Contactmethod">Preffered Contact Method:</Label>
 <select id="Contactmethod" tabindex="2">
@@ -373,7 +376,7 @@
 </select> <br>
 <Label>Submit Feedback:</Label><br>
 <input type="checkbox" id="Consent" name="Consent"> <label for="Consent">I consent the use of my feedback.</label> <button type="submit">Submit</button>
-
+</fieldset>
  
   </form>
 </section>
